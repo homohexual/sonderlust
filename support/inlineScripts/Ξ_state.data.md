@@ -1,0 +1,1 @@
+{"lists":{"pcs":{"type":"basic","content":[]},"npcs":{"type":"basic","content":[]},"threads":{"type":"basic","content":[]}},"mythicgme":{"chaos":5,"scene":1}}
