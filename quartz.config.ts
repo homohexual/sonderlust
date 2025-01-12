@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "a little trouble, as a treat",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -41,13 +41,13 @@ colors: {
         textHighlight: "#fff23688",
       },
       darkMode: {
-        light: "#a39594",
-        lightgray: "#3c3c3c",
-        gray: "#cec4c2",
-        darkgray: "#dfdfdf",
-        dark: "#e75b00",
-        secondary: "#e75b00",
-        tertiary: "#e75b00",
+        light: "#27343a",
+        lightgray: "#9ea5a8",
+        gray: "#9ea5a8",
+        darkgray: "#e1e1e1",
+        dark: "#ff6800",
+        secondary: "#ff0022",
+        tertiary: "#ff6800",
         highlight: "rgba(143, 159, 169, 0.15)",
         textHighlight: "#b3aa0288",
         },
