@@ -12,6 +12,7 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "build:css": "sass quartz/styles/custom.scss quartz/styles/custom.css",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
@@ -109,7 +110,9 @@
     "@types/yargs": "^17.0.33",
     "esbuild": "^0.24.2",
     "prettier": "^3.4.2",
+    "sass": "^1.83.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
+
 }
