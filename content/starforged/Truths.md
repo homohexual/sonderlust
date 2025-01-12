@@ -1,4 +1,4 @@
-my character## Cataclysm
+## Cataclysm
 ```iron-vault-truth
 truth:starforged/cataclysm
 ```

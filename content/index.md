@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: howdy
 ---
 
-This is a blank Quartz installation. test.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+this is the landing page for my ironsworn: starforged game. 
