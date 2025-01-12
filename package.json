@@ -1,6 +1,6 @@
 {
   "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "description": "a little trouble, as a treat",
   "private": true,
   "version": "4.4.0",
   "type": "module",
@@ -12,7 +12,6 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
-    "build:css": "sass quartz/styles/custom.scss quartz/styles/custom.css",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
