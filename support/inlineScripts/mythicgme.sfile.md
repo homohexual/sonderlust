@@ -325,7 +325,7 @@ const ACTION_TABLE = ["abandon","acquire","advance","affect","aid","arrive","ass
 const SUBJECT_TABLE = ["ability","advantage","alliance","authority","balance","barrier","belief","blood","bond","burden","commerce","community","corruption","creation","crime","culture","cure","danger","death","debt","decay","deception","defense","destiny","disaster","discovery","disease","dominion","dream","duty","enemy","expedition","faction","fame","family","fear","fellowship","freedom","greed","hardship","hate","health","history","home","honor","hope","humanity","innocence","knowledge","labor","language","law","legacy","life","love","memory","nature","opportunity","passage","peace","phenomenon","possession","power","price","pride","prize","prophesy","protection","quest","relationship","religion","reputation","resource","revenge","rival","rumor","safety","sanctuary","secret","solution","spirit","stranger","strategy","strength","superstition","supply","survival","technology","time","tool","trade","truth","vengeance","vow","war","warning","weakness","wealth","weapon","world"];
 
 // Roll on the two meaning tables
-let result = aPick(ACTION_TABLE) + aPick(SUBJECT_TABLE);
+let result = aPick(ACTION_TABLE) + " " + aPick(SUBJECT_TABLE);
 
 // Return the meaning roll result
 return expFormat([ "Meaning:\n", result, "" ]);
