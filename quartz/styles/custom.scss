@@ -1,3 +1,92 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* 6. BONUS! CRT Scanlines and flicker! 
+  * It's not for everyone though, so it's disabled by default.
+  * simply remove the `/*` below a subsection to enable it **/
+
+/* 6.1. Pentile effect (chunky pixels) */
+.app-container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.07) 50%), 
+              linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.0125), rgba(0, 0, 255, 0.02));
+  z-index: 2;
+  background-size: 100% 5px, 2.5px 100%; /* Line size unchanged */
+  pointer-events: none;
+}
+
+
+
+/* 6.2. Screen flicker */
+.app-container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker .15s infinite;
+}
+@keyframes flicker {
+  0% {opacity: 0.17861;}
+  5% {opacity: 0.24769;}
+  10% {opacity: 0.13604;}
+  15% {opacity: 0.30626;}
+  20% {opacity: 0.18128;}
+  25% {opacity: 0.43891;}
+  30% {opacity: 0.35583;}
+  35% {opacity: 0.37807;}
+  40% {opacity: 0.16559;}
+  45% {opacity: 0.34693;}
+  50% {opacity: 0.46019;}
+  55% {opacity: 0.28594;}
+  60% {opacity: 0.10313;}
+  65% {opacity: 0.41988;}
+  70% {opacity: 0.33455;}
+  75% {opacity: 0.27288;}
+  80% {opacity: 0.41428;}
+  85% {opacity: 0.30419;}
+  90% {opacity: 0.34003;}
+  95% {opacity: 0.26108;}
+  100% {opacity: 0.14387;}
+}
+
+/* 6.3. Text blur effect */
+.app-container {
+  text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  animation: textShadow 1.6s infinite;
+}
+@keyframes textShadow {
+  0% {text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  5% {text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  10% {text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  15% {text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  20% {text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  25% {text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  30% {text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  35% {text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  40% {text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  45% {text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  50% {text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  55% {text-shadow: 2.3758461067427541.5px 0 1px rgba(0,30,255,0.5), -2.3758461067427541.5px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  60% {text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  65% {text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  70% {text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  75% {text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  80% {text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  85% {text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  90% {text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  95% {text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+  100% {text-shadow: 2.6208764473832511.5px 0 1px rgba(0,30,255,0.5), -2.6208764473832511.5px 0 1px rgba(255,0,80,0.3), 0 0 1.5px;}
+}
+/**/
