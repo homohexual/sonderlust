@@ -188,10 +188,10 @@ const fateRange =
 // Roll on the fate range to determine fate result
 const r = roll(100);
 let result =
-	(r <= fateRange[0]) ? "extreme yes" :
-	(r <= fateRange[1]) ? "yes" :
-	(r <= fateRange[2]) ? "no" :
-	"extreme no";
+	(r <= fateRange[0]) ? "EXTEREME YES" :
+	(r <= fateRange[1]) ? "YES" :
+	(r <= fateRange[2]) ? "NO" :
+	"EXTREME NO";
 
 // If the roll triggers a random event, add it
 let eventOutput = "";
@@ -202,7 +202,7 @@ if (Math.trunc(r/10) == r % 10 &&
 }
 
 // Return the fate result, along with the odds and possible random event
-return expFormat("fate check (" + ODDS[$1+4] + "):\n" + result + eventOutput);
+return expFormat("Fate check (" + ODDS[$1+4] + "):\n" + result + eventOutput);
 ```
 __
 fate {odds: -4 TO 6 ("impossible" TO "has to be"), default: 0 ("50/50")} - Makes a fate check based on {odds}.
@@ -233,7 +233,7 @@ __
 __
 ```js
 return expFormat(
-	"currently in scene " + _inlineScripts.state.sessionState.mythicgme.scene + ".");
+	"Currently in scene " + _inlineScripts.state.sessionState.mythicgme.scene + ".");
 ```
 __
 scene get - Shows the current scene.
@@ -267,12 +267,12 @@ if (chk <= _inlineScripts.state.sessionState.mythicgme.chaos)
 	// Odd roll?  Modify the scene in some way
 	if (chk % 2)
 	{
-		result += "\n- scene altered";
+		result += "\n- Scene altered";
 	}
 	// Even Roll?  Replace the scene with a random event
 	else
 	{
-		result += "\n- scene interrupted:\n    - event - " + expand("event")[1];
+		result += "\n- Scene interrupted:\n    - event - " + expand("event")[1];
 	}
 }
 
@@ -291,7 +291,7 @@ __
 __
 ```js
 // Data
-const FOCUS_TABLE = [ ["remote",7],["npc acts",28,"npcs"],["new npc",35],["thread advance",45,"threads"],["thread loss",52,"threads"],["thread end",55,"threads"],["pc negative",67,"pcs"],["pc positive",75,"pcs"],["ambiguous",83],["npc negative",92,"npcs"],["npc positive",100,"npcs"] ];
+const FOCUS_TABLE = [ ["REMOTE",7],["NPC ACTS",28,"npcs"],["NEW NPC",35],["THREAD ADVANCE",45,"threads"],["THREAD LOSS",52,"threads"],["THREAD END",55,"threads"],["PC NEGATIVE",67,"pcs"],["PC POSITIVE",75,"pcs"],["AMBIGUOUS",83],["NPC NEGATIVE",92,"npcs"],["NPC POSITIVE",100,"npcs"] ];
 
 // Roll on the table
 let result = aPickWeight(FOCUS_TABLE);
@@ -305,11 +305,7 @@ let meaning = expand("meaning")[1];
 
 // Return the random event result
 return expFormat([ "Event:\n", result[0] + focus + " - " + meaning, "" ]);
-
-
-
 ```
-
 __
 event - Makes an event check.
 
@@ -321,11 +317,11 @@ __
 __
 ```js
 // Data
-const ACTION_TABLE = ["abandon","acquire","advance","affect","aid","arrive","assault","attack","avenge","avoid","await","begin","betray","bolster","breach","break","capture","challenge","change","charge","clash","command","communicate","construct","control","coordinate","create","debate","defeat","defend","deflect","defy","deliver","demand","depart","destroy","distract","eliminate","endure","escalate","escort","evade","explore","falter","find","finish","focus","follow","fortify","gather","guard","hide","hold","hunt","impress","initiate","inspect","investigate","journey","learn","leave","locate","lose","manipulate","mourn","move","oppose","overwhelm","persevere","preserve","protect","raid","reduce","refuse","reject","release","remove","research","resist","restore","reveal","risk","scheme","search","secure","seize","serve","share","strengthen","summon","support","suppress","surrender","swear","threaten","transform","uncover","uphold","weaken","withdraw"];
-const SUBJECT_TABLE = ["ability","advantage","alliance","authority","balance","barrier","belief","blood","bond","burden","commerce","community","corruption","creation","crime","culture","cure","danger","death","debt","decay","deception","defense","destiny","disaster","discovery","disease","dominion","dream","duty","enemy","expedition","faction","fame","family","fear","fellowship","freedom","greed","hardship","hate","health","history","home","honor","hope","humanity","innocence","knowledge","labor","language","law","legacy","life","love","memory","nature","opportunity","passage","peace","phenomenon","possession","power","price","pride","prize","prophesy","protection","quest","relationship","religion","reputation","resource","revenge","rival","rumor","safety","sanctuary","secret","solution","spirit","stranger","strategy","strength","superstition","supply","survival","technology","time","tool","trade","truth","vengeance","vow","war","warning","weakness","wealth","weapon","world"];
+const ACTION_TABLE = ["ATTAINMENT","STARTING","NEGLECT","FIGHT","RECRUIT","TRIUMPH","VIOLATE","OPPOSE","MALICE","COMMUNICATE","PERSECUTE","INCREASE","DECREASE","ABANDON","GRATIFY","INQUIRE","ANTAGONISE","MOVE","WASTE","TRUCE","RELEASE","BEFRIEND","JUDGE","DESERT","DOMINATE","PROCRASTINATE","PRAISE","SEPARATE","TAKE","BREAK","HEAL","DELAY","STOP","LIE","RETURN","IMMITATE","STRUGGLE","INFORM","BESTOW","POSTPONE","EXPOSE","HAGGLE","IMPRISON","RELEASE","CELEBRATE","DEVELOP","TRAVEL","BLOCK","HARM","DEBASE","OVERINDULGE","ADJOURN","ADVERSITY","KILL","DISRUPT","USURP","CREATE","BETRAY","AGREE","ABUSE","OPPRESS","INSPECT","AMBUSH","SPY","ATTACH","CARRY","OPEN","CARELESSNESS","RUIN","EXTRAVAGANCE","TRICK","ARRIVE","PROPOSE","DIVIDE","REFUSE","MISTRUST","DECEIVE","CRUELTY","INTOLERANCE","TRUST","EXCITEMENT","ACTIVITY","ASSIST","CARE","NEGLIGENCE","PASSION","WORK_HARD","CONTROL","ATTRACT","FAILURE","PURSUE","VENGEANCE","PROCEEDINGS","DISPUTE","PUNISH","GUIDE","TRANSFORM","OVERTHROW","OPPRESS","CHANGE"];
+const SUBJECT_TABLE = ["GOALS","DREAMS","ENVIRONMENT","OUTSIDE","INSIDE","REALITY","ALLIES","ENEMIES","EVIL","GOOD","EMOTIONS","OPPOSITION","WAR","PEACE","THE_INNOCENT","LOVE","THE_SPIRITUAL","THE_INTELLECTUAL","NEW_IDEAS","JOY","MESSAGES","ENERGY","BALANCE","TENSION","FRIENDSHIP","THE_PHYSICAL","A_PROJECT","PLEASURES","PAIN","POSSESSIONS","BENEFITS","PLANS","LIES","EXPECTATIONS","LEGAL_MATTERS","BUREAUCRACY","BUSINESS","A_PATH","NEWS","EXTERIOR_FACTORS","ADVICE","A_PLOT","COMPETITION","PRISON","ILLNESS","FOOD","ATTENTION","SUCCESS","FAILURE","TRAVEL","JEALOUSY","DISPUTE","HOME","INVESTMENT","SUFFERING","WISHES","TACTICS","STALEMATE","RANDOMNESS","MISFORTUNE","DEATH","DISRUPTION","POWER","A_BURDEN","INTRIGUES","FEARS","AMBUSH","RUMOR","WOUNDS","EXTRAVAGANCE","A_REPRESENTATIVE","ADVERSITIES","OPULENCE","LIBERTY","MILITARY","THE_MUNDANE","TRIALS","MASSES","VEHICLE","ART","VICTORY","DISPUTE","RICHES","STATUS_QUO","TECHNOLOGY","HOPE","MAGIC","ILLUSIONS","PORTALS","DANGER","WEAPONS","ANIMALS","WEATHER","ELEMENTS","NATURE","THE_PUBLIC","LEADERSHIP","FAME","ANGER","INFORMATION"];
 
 // Roll on the two meaning tables
-let result = aPick(ACTION_TABLE) + " " + aPick(SUBJECT_TABLE);
+let result = aPick(ACTION_TABLE) + " _(of)_ " + aPick(SUBJECT_TABLE);
 
 // Return the meaning roll result
 return expFormat([ "Meaning:\n", result, "" ]);

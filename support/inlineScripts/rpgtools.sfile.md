@@ -41,8 +41,8 @@ __
 __
 ```js
 // Data
-let target = ["enviornment","ally","enemy","unknown","something","information"];
-let circumstance = ["missing / gone / lost / forgotten","explosive / dangerous / sensitive","blocked / hidden / trapped","arrived / recent / new","dead / destroyed / unrecoverable","broken / damaged / injured","flooded / overflowed / exceeded","sabotaged / captured / taken","corrupted / twisted / insane","false / fake / lying / treason","mistaken / error / false / wrong","leaked / discovered / known","erratic / unreliable / failing / insufficient","disrupted / modified / artifical","surprising / altered / unexpected","younger / older / newer / obsolete","sick / hazardous / poison / toxic","prepared / armed / expected","unprepared / unarmed / unexpected","delayed / timed / wait"];
+let target = ["ENVIRONMENT","ALLY","ENEMY","UNKNOWN","SOMETHING","INFORMATION"];
+let circumstance = ["MISSING / GONE / LOST / FORGOTTEN","EXPLOSIVE / DANGEROUS / SENSITIVE","BLOCKED / HIDDEN / TRAPPED","ARRIVED / RECENT / NEW","DEAD / DESTROYED / UNRECOVERABLE","BROKEN / DAMAGED / INJURED","FLOODED / OVERFLOWED / EXCEEDED","SABOTAGED / CAPTURED / TAKEN","CORRUPTED / TWISTED / INSANE","FALSE / FAKE / LYING / TREASON","MISTAKEN / ERROR / FALSE / WRONG","LEAKED / DISCOVERED / KNOWN","ERRATIC / UNRELIABLE / FAILING / INSUFFICIENT","DISRUPTED / MODIFIED / ARTIFICIAL","SURPRISING / ALTERED / UNEXPECTED","YOUNGER / OLDER / NEWER / OBSOLETE","SICK / HAZARDOUS / POISON / TOXIC","PREPARED / ARMED / EXPECTING","UNPREPARED / UNARMED / UNEXPECTED","DELAYED / TIMED / WAIT"];
 
 // Roll from the data and return the result.  The final empty string allows
 // formatting to be removed by the caller.

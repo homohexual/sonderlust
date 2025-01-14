@@ -1,1 +1,1 @@
-{"lists":{"pcs":{"type":"basic","content":[]},"npcs":{"type":"basic","content":[]},"threads":{"type":"basic","content":[]}},"mythicgme":{"chaos":5,"scene":1}}
+{"lists":{"pcs":{"type":"basic","content":[]},"npcs":{"type":"basic","content":[]},"threads":{"type":"basic","content":[]}},"notevars":{"isMarkdownRefreshed":true},"notepick":{},"mythicgme":{"chaos":5,"scene":1},"tablefiles":{"paths":{"Oracles":1},"configuration":{}},"clips":{}}
