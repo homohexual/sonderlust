@@ -1,0 +1,409 @@
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
+```
+
+# Oracles Overview
+ 
+```ccard
+type: folder_brief_live
+```
+
+
+
+# path names
+
+## campaign
+Campaign_Background_Assets.md
+Campaign_Backstory_Prompt.md
+Campaign_Inciting_Incident.md
+Campaign_Sector_Trouble.md
+Campaign_Starship_History.md
+Campaign_Starship_Quirk.md
+## characters
+Characters_Callsign.md
+Characters_Family_Name.md
+Characters_First_Look.md
+Characters_Given_Name.md
+Characters_Goal.md
+Characters_Initial_Disposition.md
+Characters_Plot_Knowledge_Topic.md
+Characters_Plot_Knowledge_Type.md
+Characters_Random_Conversation.md
+Characters_Revealed_Aspect.md
+Characters_Role.md
+## core
+Core_Action.md
+Core_Descriptor.md
+Core_Focus.md
+Core_Theme.md
+## creatures
+Creatures_Basic_Form_Air.md
+Creatures_Basic_Form_Interior.md
+Creatures_Basic_Form_Land.md
+Creatures_Basic_Form_Liquid.md
+Creatures_Basic_Form_Space.md
+Creatures_Encountered_Behavior.md
+Creatures_Environment.md
+Creatures_First_Look.md
+Creatures_Revealed_Aspect.md
+Creatures_Scale.md
+Creatures_Ultra_Scale.md
+## derelicts
+Derelicts_Condition.md
+Derelicts_Inner_First_Look.md
+Derelicts_Location_and_Type.md
+Derelicts_Outer_First_Look.md
+Derelicts_Zones_Settlement.md
+Derelicts_Zones_Starship.md
+### access
+Derelicts_Access_Area.md
+Derelicts_Access_Feature.md
+Derelicts_Access_Opportunity.md
+Derelicts_Access_Peril.md
+### community
+Derelicts_Community_Area.md
+Derelicts_Community_Feature.md
+Derelicts_Community_Opportunity.md
+Derelicts_Community_Peril.md
+### engineering
+Derelicts_Engineering_Area.md
+Derelicts_Engineering_Feature.md
+Derelicts_Engineering_Opportunity.md
+Derelicts_Engineering_Peril.md
+### living
+Derelicts_Living_Area.md
+Derelicts_Living_Feature.md
+Derelicts_Living_Opportunity.md
+Derelicts_Living_Peril.md
+### medical
+Derelicts_Medical_Area.md
+Derelicts_Medical_Feature.md
+Derelicts_Medical_Opportunity.md
+Derelicts_Medical_Peril.md
+### operations
+Derelicts_Operations_Area.md
+Derelicts_Operations_Features.md
+Derelicts_Operations_Opportunity.md
+Derelicts_Operations_Peril.md
+### production
+Derelicts_Production_Area.md
+Derelicts_Production_Feature.md
+Derelicts_Production_Opportunity.md
+Derelicts_Production_Peril.md
+### research
+Derelicts_Research_Area.md
+Derelicts_Research_Feature.md
+Derelicts_Research_Opportunity.md
+Derelicts_Research_Peril.md
+## districts
+Districts_Zones.md
+### access
+Districts_Access_Area.md
+Districts_Access_Feature.md
+Districts_Access_Opportunity.md
+Districts_Access_Peril.md
+### community
+Districts_Community_Area.md
+Districts_Community_Feature.md
+Districts_Community_Opportunity.md
+Districts_Community_Peril.md
+### engineering
+Districts_Engineering_Area.md
+Districts_Engineering_Feature.md
+Districts_Engineering_Opportunity.md
+Districts_Engineering_Peril.md
+### living
+Districts_Living_Area.md
+Districts_Living_Feature.md
+Districts_Living_Opportunity.md
+Districts_Living_Peril.md
+### medical
+Districts_Medical_Area.md
+Districts_Medical_Feature.md
+Districts_Medical_Opportunity.md
+Districts_Medical_Peril.md
+### operations
+Districts_Operations_Area.md
+Districts_Operations_Feature.md
+Districts_Operations_Opportunity.md
+Districts_Operations_Peril.md
+### production
+Districts_Production_Area.md
+Districts_Production_Feature.md
+Districts_Production_Opportunity.md
+Districts_Production_Peril.md
+### research
+Districts_Research_Area.md
+Districts_Research_Feature.md
+Districts_Research_Opportunity.md
+Districts_Research_Peril.md
+## factions
+Factions_AI_Hive_Prime_Directive.md
+Factions_Corporation_Field.md
+Factions_Data_Harvesters_Role.md
+Factions_Dominion.md
+Factions_Fringe_Group.md
+Factions_Guild.md
+Factions_Influence.md
+Factions_Leadership.md
+Factions_Military_Specialty.md
+Factions_Name_Affiliation.md
+Factions_Name_Identity.md
+Factions_Name_Legacy.md
+Factions_Name_Template.md
+Factions_Projects.md
+Factions_Quirks.md
+Factions_Relationships.md
+Factions_Religious_Role.md
+Factions_Research_Field_of_Study.md
+Factions_Rumors.md
+Factions_Type.md
+## locations
+Location_Themes_Type.md
+### arid
+Location_Themes_Arid_Feature.md
+Location_Themes_Arid_Opportunity.md
+Location_Themes_Arid_Peril.md
+### chaotic
+Location_Themes_Chaotic_Feature.md
+Location_Themes_Chaotic_Opportunity.md
+Location_Themes_Chaotic_Peril.md
+### chronal
+Location_Themes_Chronal_Feature.md
+Location_Themes_Chronal_Opportunity.md
+Location_Themes_Chronal_Peril.md
+### floating
+Location_Themes_Floating_Feature.md
+Location_Themes_Floating_Opportunity.md
+Location_Themes_Floating_Peril.md
+### flooded
+Location_Themes_Flooded_Feature.md
+Location_Themes_Flooded_Opportunity.md
+Location_Themes_Flooded_Peril.md
+### fortified
+Location_Themes_Fortified_Feature.md
+Location_Themes_Fortified_Opportunity.md
+Location_Themes_Fortified_Peril.md
+### frozen
+Location_Themes_Frozen_Feature.md
+Location_Themes_Frozen_Opportunity.md
+Location_Themes_Frozen_Peril.md
+### haunted
+Location_Themes_Haunted_Feature.md
+Location_Themes_Haunted_Opportunity.md
+Location_Themes_Haunted_Peril.md
+### inferno
+Location_Themes_Inferno_Feature.md
+Location_Themes_Inferno_Opportunity.md
+Location_Themes_Inferno_Peril.md
+### infested
+Location_Themes_Infested_Feature.md
+Location_Themes_Infested_Opportunity.md
+Location_Themes_Infested_Peril.md
+### inhabited
+Location_Themes_Inhabited_Feature.md
+Location_Themes_Inhabited_Opportunity.md
+Location_Themes_Inhabited_Peril.md
+### lifeform
+Location_Themes_Lifeform_Feature.md
+Location_Themes_Lifeform_Opportunity.md
+Location_Themes_Lifeform_Peril.md
+### mechanical
+Location_Themes_Mechanical_Feature.md
+Location_Themes_Mechanical_Opportunity.md
+Location_Themes_Mechanical_Peril.md
+### mystical
+Location_Themes_Mystical_Feature.md
+Location_Themes_Mystical_Opportunity.md
+Location_Themes_Mystical_Peril.md
+### overgrown
+Location_Themes_Overgrown_Feature.md
+Location_Themes_Overgrown_Opportunity.md
+Location_Themes_Overgrown_Peril.md
+### ruined
+Location_Themes_Ruined_Feature.md
+Location_Themes_Ruined_Opportunity.md
+Location_Themes_Ruined_Peril.md
+### sacred
+Location_Themes_Sacred_Feature.md
+Location_Themes_Sacred_Opportunity.md
+Location_Themes_Sacred_Peril.md
+### war zone
+Location_Themes_War_Zone_Feature.md
+Location_Themes_War_Zone_Opportunity.md
+Location_Themes_War_Zone_Peril.md
+## misc
+Misc_Anomaly_Effect.md
+Misc_Combat_Action.md
+Misc_Item_of_Narrative_Significance.md
+Misc_Story_Clue.md
+Misc_Story_Complication.md
+## moves
+Moves_Begin_a_Session.md
+Moves_Confront_Chaos.md
+Moves_Endure_Harm.md
+Moves_Endure_Stress.md
+Moves_Make_a_Discovery.md
+Moves_Pay_the_Price.md
+Moves_Take_Decisive_Action.md
+Moves_Withstand_Damage.md
+## planets
+Planets_Class.md
+Planets_Opportunity_Lifebearing.md
+Planets_Opportunity_Lifeless.md
+Planets_Peril_Lifebearing.md
+Planets_Peril_Lifeless.md
+### desert
+Planets_Desert_Atmosphere.md
+Planets_Desert_Feature.md
+Planets_Desert_Life.md
+Planets_Desert_Name.md
+Planets_Desert_Observed_from_Space.md
+Planets_Desert_Settlements_Expanse.md
+Planets_Desert_Settlements_Outlands.md
+Planets_Desert_Settlements_Terminus.md
+### furnace
+Planets_Furnace_Atmosphere.md
+Planets_Furnace_Feature.md
+Planets_Furnace_Life.md
+Planets_Furnace_Name.md
+Planets_Furnace_Observed_from_Space.md
+Planets_Furnace_Settlements_Expanse.md
+Planets_Furnace_Settlements_Outlands.md
+Planets_Furnace_Settlements_Terminus.md
+### grave
+Planets_Grave_Atmosphere.md
+Planets_Grave_Feature.md
+Planets_Grave_Life.md
+Planets_Grave_Name.md
+Planets_Grave_Observed_from_Space.md
+Planets_Grave_Settlements_Expanse.md
+Planets_Grave_Settlements_Outlands.md
+Planets_Grave_Settlements_Terminus.md
+### ice
+Planets_Ice_Atmosphere.md
+Planets_Ice_Feature.md
+Planets_Ice_Life.md
+Planets_Ice_Name.md
+Planets_Ice_Observed_from_Space.md
+Planets_Ice_Settlements_Expanse.md
+Planets_Ice_Settlements_Outlands.md
+Planets_Ice_Settlements_Terminus.md
+### jovian
+Planets_Jovian_Atmosphere.md
+Planets_Jovian_Feature.md
+Planets_Jovian_Life.md
+Planets_Jovian_Name.md
+Planets_Jovian_Observed_from_Space.md
+Planets_Jovian_Settlements_Expanse.md
+Planets_Jovian_Settlements_Outlands.md
+Planets_Jovian_Settlements_Terminus.md
+### jungle
+Planets_Jungle_Atmosphere.md
+Planets_Jungle_Feature.md
+Planets_Jungle_Life.md
+Planets_Jungle_Name.md
+Planets_Jungle_Observed_from_Space.md
+Planets_Jungle_Settlements_Expanse.md
+Planets_Jungle_Settlements_Outlands.md
+Planets_Jungle_Settlements_Terminus.md
+### ocean
+Planets_Ocean_Atmosphere.md
+Planets_Ocean_Feature.md
+Planets_Ocean_Life.md
+Planets_Ocean_Name.md
+Planets_Ocean_Observed_from_Space.md
+Planets_Ocean_Settlements_Expanse.md
+Planets_Ocean_Settlements_Outlands.md
+Planets_Ocean_Settlements_Terminus.md
+### rocky
+Planets_Rocky_Atmosphere.md
+Planets_Rocky_Feature.md
+Planets_Rocky_Life.md
+Planets_Rocky_Name.md
+Planets_Rocky_Observed_from_Space.md
+Planets_Rocky_Settlements_Expanse.md
+Planets_Rocky_Settlements_Outlands.md
+Planets_Rocky_Settlements_Terminus.md
+### shattered
+Planets_Shattered_Atmosphere.md
+Planets_Shattered_Feature.md
+Planets_Shattered_Life.md
+Planets_Shattered_Name.md
+Planets_Shattered_Observed_from_Space.md
+Planets_Shattered_Settlements_Expanse.md
+Planets_Shattered_Settlements_Outlands.md
+Planets_Shattered_Settlements_Terminus.md
+### tainted
+Planets_Tainted_Atmosphere.md
+Planets_Tainted_Feature.md
+Planets_Tainted_Life.md
+Planets_Tainted_Name.md
+Planets_Tainted_Observed_from_Space.md
+Planets_Tainted_Settlements_Expanse.md
+Planets_Tainted_Settlements_Outlands.md
+Planets_Tainted_Settlements_Terminus.md
+### vital
+Planets_Vital_Atmosphere.md
+Planets_Vital_Biome_Type.md
+Planets_Vital_Diversity.md
+Planets_Vital_Feature.md
+Planets_Vital_Life.md
+Planets_Vital_Name.md
+Planets_Vital_Observed_from_Space.md
+Planets_Vital_Plant_Characteristic.md
+Planets_Vital_Plant_First_Look.md
+Planets_Vital_Plant_Type.md
+Planets_Vital_Settlements_Expanse.md
+Planets_Vital_Settlements_Outlands.md
+Planets_Vital_Settlements_Terminus.md
+## settlements
+Settlements_Authority.md
+Settlements_First_Look.md
+Settlements_Initial_Contact.md
+Settlements_Location.md
+Settlements_Name.md
+Settlements_Population_Expanse.md
+Settlements_Population_Outlands.md
+Settlements_Population_Terminus.md
+Settlements_Projects.md
+Settlements_Trouble.md
+## space
+Space_Opportunity.md
+Space_Peril.md
+Space_Sector_Name_Prefix.md
+Space_Sector_Name_Suffix.md
+Space_Sighting_Expanse.md
+Space_Sighting_Outlands.md
+Space_Sighting_Terminus.md
+Space_Stellar_Object.md
+## starships
+Starships_First_Look.md
+Starships_Fleet.md
+Starships_Initial_Contact.md
+Starships_Mission_Expanse.md
+Starships_Mission_Outlands.md
+Starships_Mission_Terminus.md
+Starships_Name.md
+Starships_Type.md
+## vaults
+Vaults_Form.md
+Vaults_Inner_First_Look.md
+Vaults_Interior_Feature.md
+Vaults_Interior_Opportunity.md
+Vaults_Interior_Peril.md
+Vaults_Location.md
+Vaults_Material.md
+Vaults_Outer_First_Look.md
+Vaults_Purpose.md
+Vaults_Sanctum_Feature.md
+Vaults_Sanctum_Opportunity.md
+Vaults_Sanctum_Peril.md
+Vaults_Scale.md
+Vaults_Shape.md

@@ -1,19 +1,18 @@
 module.exports = async (tp) => {
   const aboRoll = Math.floor(Math.random() * 100) + 1;
   let aboResult;
-  if (aboRoll <= 5) {
+  if (aboRoll <= 10) {
     aboResult = "Alpha";
-  } else if (aboRoll <= 95) {
+  } else if (aboRoll <= 89) {
     aboResult = "Beta";
   } else {
     aboResult = "Omega";
   }
 
   let firstLookResult = null;
-  let firstLookRoll = null;
 
   if (aboResult === "Alpha" || aboResult === "Omega") {
-    firstLookRoll = Math.floor(Math.random() * 100) + 1;
+    const firstLookRoll = Math.floor(Math.random() * 100) + 1;
 
     if (firstLookRoll <= 10) {
       firstLookResult = "Compelling scent";
@@ -34,16 +33,9 @@ module.exports = async (tp) => {
     }
   }
 
-  let output = `\`\`\`iron-vault-mechanics
-oracle name="[A/B/O Status](#)" result="${aboResult}" roll=${aboRoll}`;
-
-  if (firstLookResult) {
-    output += `
-oracle name="[Omegaverse First Look](#)" result="${firstLookResult}" roll=${firstLookRoll}`;
-  }
-
-  output += `
-\`\`\``;
+  // Generate callout with collapsible title
+  let output = `> [!oracle]- A/B/O Status
+> **${aboResult}${firstLookResult ? ` - ${firstLookResult}` : ""}**`;
 
   return output;
 };

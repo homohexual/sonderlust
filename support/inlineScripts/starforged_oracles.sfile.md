@@ -179,31 +179,28 @@ __
 yesno {chances initials} {question to ask} - AC for Almost Certain, L for Likely, FF for Fifty-Fifty, U for Unlikely, SC for Small Chance.
 
 __
-^at (.+)$
+^Action & Theme$
 __
 ```js
 let action = expand("tbl roll Oracles/Core/Core_Action.md");
 let theme = expand("tbl roll Oracles/Core/Core_Theme.md");
-let calloutTitle = "> [!oracle]- " + $1 + " Action/Theme: " + action + " " + theme;
-let outcome = "\n> **Additional Details:** \n\n";
-return calloutTitle + outcome;
+let calloutTitle = "> [!oracle]- " + " Action & Theme: " + action + " " + theme;
+return calloutTitle + "\n\n"; 
 ```
 __
-at {question you need action/theme for} - Use this function to ask a question seeking more details with the Action/Theme oracles.
+Action & Theme - Use this function to ask a question seeking more details with the Action/Theme oracles.
 
 __
-^df (.+)$
+^Descriptor & Focus$
 __
 ```js
 let descriptor = expand("tbl roll Oracles/Core/Core_Descriptor.md");
 let focus = expand("tbl roll Oracles/Core/Core_Focus.md");
-let calloutTitle = "> [!oracle]- " + $1 + " Descriptor/Focus: " + descriptor + " " + focus;
-let outcome = "\n> **Additional Details:** \n\n";
-return calloutTitle + outcome;
+let calloutTitle = "> [!oracle]- "  + " Descriptor & Focus: " + descriptor + " " + focus;
+return calloutTitle + "\n\n";
 ```
 __
-df {question you need descriptor/focus for} - Use this function to ask a question seeking more details with the Descriptor/Focus oracles.
-
+Descriptor & Focus - Use this function to ask a question seeking more details with the Descriptor/Focus oracles.
 __
 ^character
 __
